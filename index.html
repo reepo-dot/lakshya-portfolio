@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Lakshya Roat - 1st Year B.Tech Mechanical Engineering Student. Explore CAD designs, robotics projects, and engineering problem-solving.">
+  <meta name="keywords" content="Lakshya Roat, Mechanical Engineering, B.Tech, Portfolio, CAD, SolidWorks, Robotics, Engineering Student">
+  <meta name="author" content="Lakshya Roat">
+  <title>Lakshya Roat | B.Tech Mechanical Engineering Portfolio</title>
+  
+  <!-- Google Fonts for Modern Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background Glow & Grid Effects -->
+  <div class="bg-canvas">
+    <div class="ambient-glow glow-1"></div>
+    <div class="ambient-glow glow-2"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#home" class="logo" aria-label="Lakshya Roat Homepage">
+        <span class="logo-box">
+          <svg class="gear-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+          </svg>
+          <span class="logo-initials">LR</span>
+        </span>
+        <span class="logo-text">Lakshya<span class="highlight-dot">.</span></span>
+      </a>
+
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#academics" class="nav-link">Academics</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="Switch Light/Dark Mode" title="Toggle Theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="#contact" class="btn btn-sm btn-outline nav-cta">Let's Connect</a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge-pill">
+            <span class="pulse-indicator"></span>
+            <span>B.Tech Mechanical Engineering &bull; 1st Year</span>
+          </div>
+          
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-gradient">Lakshya Roat</span>
+          </h1>
+          
+          <div class="typewriter-container">
+            <span class="typewriter-prefix">I am passionate about </span>
+            <span class="typewriter-text" id="typewriter"></span>
+            <span class="cursor">&nbsp;</span>
+          </div>
+          
+          <p class="hero-description">
+            First-year undergraduate enthusiastic about machine design, CAD modeling, robotics, thermodynamics, and intelligent automation. Bridging the gap between classical mechanical mechanics and modern digital tech.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Projects</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-arrow">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Contact Me</span>
+            </a>
+            <button class="btn btn-ghost" id="resume-btn" title="View / Download Resume">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="icon-inline">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+              <span>Resume</span>
+            </button>
+          </div>
+
+          <!-- Quick Metrics / Highlights -->
+          <div class="hero-metrics">
+            <div class="metric-card">
+              <span class="metric-num">1st</span>
+              <span class="metric-label">Year B.Tech ME</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-card">
+              <span class="metric-num">6+</span>
+              <span class="metric-label">Hands-on Projects</span>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-card">
+              <span class="metric-num">100%</span>
+              <span class="metric-label">Eager to Learn</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="profile-card-wrapper">
+            <!-- Decorative orbiting rings -->
+            <div class="orbit-ring ring-1"></div>
+            <div class="orbit-ring ring-2"></div>
+            
+            <div class="profile-card">
+              <div class="avatar-container">
+                <div class="avatar-gradient">
+                  <div class="avatar-graphic">
+                    <!-- Mechanical Engineering Themed Avatar Graphic -->
+                    <svg viewBox="0 0 200 200" class="me-illustration" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <!-- Central Gear -->
+                      <g class="rotating-gear">
+                        <circle cx="100" cy="100" r="36" stroke="currentColor" stroke-width="6" stroke-dasharray="10 4" />
+                        <circle cx="100" cy="100" r="16" fill="currentColor" opacity="0.25" />
+                        <circle cx="100" cy="100" r="8" fill="currentColor" />
+                        <!-- Gear teeth -->
+                        <path d="M100 50 L100 62 M100 138 L100 150 M50 100 L62 100 M138 100 L150 100 M65 65 L74 74 M126 126 L135 135 M65 135 L74 126 M126 74 L135 65" stroke="currentColor" stroke-width="6" stroke-linecap="round"/>
+                      </g>
+                      <!-- Caliper / Compass / Mechanism Vectors -->
+                      <path d="M40 160 L100 40 L160 160" stroke="currentColor" stroke-width="3" opacity="0.4" stroke-linecap="round" />
+                      <line x1="60" y1="120" x2="140" y2="120" stroke="currentColor" stroke-width="2" stroke-dasharray="4 4" opacity="0.6" />
+                      <!-- Small Meshed Gear -->
+                      <g class="rotating-counter-gear">
+                        <circle cx="148" cy="60" r="18" stroke="currentColor" stroke-width="3" />
+                        <circle cx="148" cy="60" r="6" fill="currentColor" />
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+                <div class="floating-badge badge-cad">
+                  <span class="badge-icon">📐</span>
+                  <span class="badge-title">CAD / SolidWorks</span>
+                </div>
+                <div class="floating-badge badge-robotics">
+                  <span class="badge-icon">⚡</span>
+                  <span class="badge-title">Robotics &amp; Auto</span>
+                </div>
+              </div>
+              
+              <div class="profile-info-mini">
+                <h3 class="profile-name">Lakshya Roat</h3>
+                <p class="profile-sub">Mechanical Engineering &bull; Innovator</p>
+                <div class="status-indicator">
+                  <span class="status-dot"></span>
+                  <span>Open to Internships &amp; Research Collaborations</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Get To Know Me</span>
+          <h2 class="section-title">About <span class="text-gradient">Lakshya</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-narrative">
+            <h3 class="about-greeting">
+              Driven by curiosity, fueled by <span class="highlight">physics, mechanisms, and design</span>.
+            </h3>
+            <p>
+              I am currently in my <strong>1st Year of Bachelor of Technology (B.Tech) in Mechanical Engineering</strong>. Ever since I first opened a bicycle gear mechanism as a child, I've been fascinated by how intricate machine assemblies transform basic energy into purposeful, graceful motion.
+            </p>
+            <p>
+              As a freshman engineering student, I combine foundational mechanical engineering principles—such as <em>Statics, Dynamics, Thermodynamics, and Material Science</em>—with modern software tools like <strong>CAD (AutoCAD &amp; SolidWorks)</strong>, <strong>Python</strong>, and rapid prototyping technologies.
+            </p>
+            <p>
+              My goal is to specialize in <strong>Automated Systems, Robotics, Advanced Machine Design, and Clean Energy Mobility</strong>. I actively participate in collegiate workshops, maker labs, and engineering design challenges.
+            </p>
+
+            <div class="about-highlights-grid">
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                  </svg>
+                </div>
+                <div class="highlight-info">
+                  <h4>Core Mechanics</h4>
+                  <p>Solid grasp of physics, engineering mechanics &amp; drawing.</p>
+                </div>
+              </div>
+
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                  </svg>
+                </div>
+                <div class="highlight-info">
+                  <h4>3D Computer-Aided Design</h4>
+                  <p>Part drafting, parametric modeling &amp; 3D visualization.</p>
+                </div>
+              </div>
+
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                </div>
+                <div class="highlight-info">
+                  <h4>Computation &amp; Code</h4>
+                  <p>Python scripting, algorithm logic &amp; web fundamentals.</p>
+                </div>
+              </div>
+
+              <div class="highlight-item">
+                <div class="highlight-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                  </svg>
+                </div>
+                <div class="highlight-info">
+                  <h4>Hands-on Maker</h4>
+                  <p>Prototyping, mechanical workshop tools &amp; teamwork.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-sidebar">
+            <div class="info-card">
+              <h3 class="info-card-title">Quick Information</h3>
+              <ul class="info-list">
+                <li>
+                  <span class="info-key">Name:</span>
+                  <span class="info-val">Lakshya Roat</span>
+                </li>
+                <li>
+                  <span class="info-key">Academic Year:</span>
+                  <span class="info-val">1st Year (Freshman)</span>
+                </li>
+                <li>
+                  <span class="info-key">Degree:</span>
+                  <span class="info-val">B.Tech Mechanical Engineering</span>
+                </li>
+                <li>
+                  <span class="info-key">Key Focus:</span>
+                  <span class="info-val">CAD Design, Robotics &amp; Mechanics</span>
+                </li>
+                <li>
+                  <span class="info-key">Primary Language:</span>
+                  <span class="info-val">English, Hindi</span>
+                </li>
+                <li>
+                  <span class="info-key">Interests:</span>
+                  <span class="info-val">3D Printing, Aeromodelling, Robotics, Coding</span>
+                </li>
+                <li>
+                  <span class="info-key">Availability:</span>
+                  <span class="info-val highlight-badge">Open for Internships &amp; Projects</span>
+                </li>
+              </ul>
+
+              <div class="quote-box">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="quote-icon">
+                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                </svg>
+                <p>"Scientists discover the world that exists; engineers create the world that never was."</p>
+                <cite>— Theodore von Kármán</cite>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">What I Bring to the Table</span>
+          <h2 class="section-title">Technical &amp; Engineering <span class="text-gradient">Skills</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="skills-category-grid">
+          <!-- Mechanical & Design -->
+          <div class="skill-category-card">
+            <div class="card-top">
+              <div class="category-icon icon-cad">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="12 8 8 12 12 16 16 12 12 8"></polygon>
+                </svg>
+              </div>
+              <h3 class="category-title">Mechanical &amp; CAD Design</h3>
+            </div>
+            <p class="category-desc">Computer-aided drafting, solid modeling, blueprint reading, and mechanical assemblies.</p>
+            <div class="skills-list">
+              <div class="skill-meter">
+                <div class="meter-info">
+                  <span>AutoCAD (2D Drafting &amp; Layouts)</span>
+                  <span class="meter-percent">80%</span>
+                </div>
+                <div class="meter-track"><div class="meter-fill" style="width: 80%;"></div></div>
+              </div>
+              <div class="skill-meter">
+                <div class="meter-info">
+                  <span>SolidWorks (3D Part Modeling)</span>
+                  <span class="meter-percent">75%</span>
+                </div>
+                <div class="meter-track"><div class="meter-fill" style="width: 75%;"></div></div>
+              </div>
+              <div class="skill-meter">
+                <div class="meter-info">
+                  <span>Engineering Drawing &amp; Orthographic Projections</span>
+                  <span class="meter-percent">88%</span>
+                </div>
+                <div class="meter-track"><div class="meter-fill" style="width: 88%;"></div></div>
+              </div>
+              <div class="skill-meter">
+                <div class="meter-info">
+                  <span>GD&amp;T &amp; Tolerancing Fundamentals</span>
+                  <span class="meter-percent">70%</span>
+                </div>
+                <div class="meter-track"><div class="meter-fill" style="width: 70%;"></div></div>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span class="tag">AutoCAD</span>
+              <span class="tag">SolidWorks</span>
+              <span class="tag">Fusion 360</span>
+              <span class="tag">Isometric Views</span>
+              <span class="tag">3D Slicing</span>
+            </div>
+          </div>
+
+          <!-- Core Mechanical Fundamentals -->
+          <div class="skill-category-card">
+            <div class="card-top">
+              <div class="category-icon icon-physics">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+              </div>
+              <h3 class="category-title">Core Engineering Foundations</h3>
+            </div>
+            <p class="category-desc">Theoretical and applied physical concepts forming the bedrock of mechanical engineering.</p>
+            <div class="skills-list">
+              <div class="skill-meter">
+                <div class="meter-info">
+                  <span>Engineering Mechanics (Statics &amp; Dynamics)</span>
+                  <span class="meter-percent">85%</span>
+                </div>
+                <div class="meter-track"><div class="meter-fill" style="width: 85%;"></div></div>
+              </div>
+              <div class="skill-meter">
+                <div class="meter-info">
+                  <span>Thermodynamics (Fundamental Laws)</span>
+                  <span class="meter-percent">78%</span>
+                </div>
+                <div class="meter-track"><div class="meter-fill" style="width: 78%;"></div></div>
+              </div>
+              <div class="skill-meter">
+                <div class="meter-info">
+                  <span>Material Science &amp; Metallurgy Basics</span>
+                  <span class="meter-percent">72%</span>
+                </div>
+                <div class="meter-track"><div class="meter-fill" style="width: 72%;"></div></div>
+              </div>
+              <div class="skill-meter">
+                <div class="meter-info">
+                  <span>Workshop Technology &amp; Machining</span>
+                  <span class="meter-percent">80%</span>
+                </div>
+                <div class="meter-track"><div class="meter-fill" style="width: 80%;"></div></div>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span class="tag">Free-Body Diagrams</span>
+              <span class="tag">Thermal Cycles</span>
+              <span class="tag">Stress-Strain</span>
+              <span class="tag">Welding &amp; Lathe</span>
+              <span class="tag">Fluid Basics</span>
+            </div>
+          </div>
+
+          <!-- Computation, Robotics & Tech -->
+          <div class="skill-category-card">
+            <div class="card-top">
+              <div class="category-icon icon-code">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="category-title">Programming &amp; Automation</h3>
+            </div>
+            <p class="category-desc">Modern mechanical engineers leverage coding to simulate, automate, and analyze machines.</p>
+            <div class="skills-list">
+              <div class="skill-meter">
+                <div class="meter-info">
+                  <span>Python for Engineering &amp; Data</span>
+                  <span class="meter-percent">75%</span>
+                </div>
+                <div class="meter-track"><div class="meter-fill" style="width: 75%;"></div></div>
+              </div>
+              <div class="skill-meter">
+                <div class="meter-info">
+                  <span>Arduino &amp; Microcontroller Interfacing</span>
+                  <span class="meter-percent">70%</span>
+                </div>
+                <div class="meter-track"><div class="meter-fill" style="width: 70%;"></div></div>
+              </div>
+              <div class="skill-meter">
+                <div class="meter-info">
+                  <span>C / C++ Basics</span>
+                  <span class="meter-percent">68%</span>
+                </div>
+                <div class="meter-track"><div class="meter-fill" style="width: 68%;"></div></div>
+              </div>
+              <div class="skill-meter">
+                <div class="meter-info">
+                  <span>Web Tech (HTML5, CSS3, JavaScript)</span>
+                  <span class="meter-percent">82%</span>
+                </div>
+                <div class="meter-track"><div class="meter-fill" style="width: 82%;"></div></div>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span class="tag">Python</span>
+              <span class="tag">NumPy</span>
+              <span class="tag">Arduino</span>
+              <span class="tag">Sensors &amp; Actuators</span>
+              <span class="tag">HTML/CSS/JS</span>
+            </div>
+          </div>
+
+          <!-- Practical & Workshop Tools -->
+          <div class="skill-category-card">
+            <div class="card-top">
+              <div class="category-icon icon-tools">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                </svg>
+              </div>
+              <h3 class="category-title">Laboratory &amp; Soft Skills</h3>
+            </div>
+            <p class="category-desc">Hands-on fabrication, precision measurement, leadership, and structured problem-solving.</p>
+            <div class="skills-list">
+              <div class="skill-meter">
+                <div class="meter-info">
+                  <span>Vernier Caliper, Micrometer &amp; Metrology</span>
+                  <span class="meter-percent">90%</span>
+                </div>
+                <div class="meter-track"><div class="meter-fill" style="width: 90%;"></div></div>
+              </div>
+              <div class="skill-meter">
+                <div class="meter-info">
+                  <span>Carpentry, Fitting &amp; Sheet Metal Work</span>
+                  <span class="meter-percent">82%</span>
+                </div>
+                <div class="meter-track"><div class="meter-fill" style="width: 82%;"></div></div>
+              </div>
+              <div class="skill-meter">
+                <div class="meter-info">
+                  <span>Technical Presentation &amp; Documentation</span>
+                  <span class="meter-percent">85%</span>
+                </div>
+                <div class="meter-track"><div class="meter-fill" style="width: 85%;"></div></div>
+              </div>
+              <div class="skill-meter">
+                <div class="meter-info">
+                  <span>Team Leadership &amp; Collaboration</span>
+                  <span class="meter-percent">88%</span>
+                </div>
+                <div class="meter-track"><div class="meter-fill" style="width: 88%;"></div></div>
+              </div>
+            </div>
+            <div class="skill-tags">
+              <span class="tag">Precision Metrology</span>
+              <span class="tag">Safety Compliance</span>
+              <span class="tag">Critical Thinking</span>
+              <span class="tag">Project Planning</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Practical Implementation</span>
+          <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="project-filters" role="tablist" aria-label="Project Categories">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="cad">CAD &amp; Design</button>
+          <button class="filter-btn" data-filter="robotics">Robotics &amp; Mechanics</button>
+          <button class="filter-btn" data-filter="software">Computation &amp; Web</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+          
+          <!-- Project 1 -->
+          <article class="project-card" data-category="cad">
+            <div class="project-visual">
+              <div class="project-banner cad-bg">
+                <div class="project-badge">SolidWorks</div>
+                <div class="blueprint-vector">
+                  <svg viewBox="0 0 100 100" fill="none" stroke="currentColor">
+                    <circle cx="35" cy="50" r="22" stroke-width="2" stroke-dasharray="3 3"/>
+                    <circle cx="70" cy="50" r="14" stroke-width="2"/>
+                    <line x1="35" y1="50" x2="70" y2="50" stroke-width="1.5"/>
+                    <path d="M35 28 L35 72 M13 50 L57 50" stroke-width="1"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">CAD Modeling &bull; Kinematics</div>
+              <h3 class="project-title">Precision Compound Gear Train Assembly</h3>
+              <p class="project-description">
+                Designed a 3-stage speed reduction compound gear train in SolidWorks. Calculated gear ratios, pitch diameters, tooth profiles (involute), and verified torque multiplication.
+              </p>
+              <div class="project-tags">
+                <span>SolidWorks</span>
+                <span>Gear Kinematics</span>
+                <span>Mechanical Assembly</span>
+                <span>2D Drafting</span>
+              </div>
+              <div class="project-links">
+                <button class="btn btn-sm btn-outline project-detail-btn" data-project="1">
+                  <span>View Details</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card" data-category="robotics">
+            <div class="project-visual">
+              <div class="project-banner robotics-bg">
+                <div class="project-badge">Robotics</div>
+                <div class="blueprint-vector">
+                  <svg viewBox="0 0 100 100" fill="none" stroke="currentColor">
+                    <rect x="25" y="30" width="50" height="40" rx="5" stroke-width="2"/>
+                    <circle cx="20" cy="40" r="6" stroke-width="2"/>
+                    <circle cx="20" cy="60" r="6" stroke-width="2"/>
+                    <circle cx="80" cy="40" r="6" stroke-width="2"/>
+                    <circle cx="80" cy="60" r="6" stroke-width="2"/>
+                    <line x1="40" y1="20" x2="40" y2="30" stroke-width="2"/>
+                    <circle cx="40" cy="16" r="3" stroke-width="2"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">Mechatronics &bull; Arduino</div>
+              <h3 class="project-title">Autonomous Obstacle-Avoiding Rover</h3>
+              <p class="project-description">
+                Constructed a 4-wheel mobile chassis with HC-SR04 ultrasonic sensor servo-sweep, L298N motor driver, and Arduino logic for real-time path collision prevention.
+              </p>
+              <div class="project-tags">
+                <span>Arduino</span>
+                <span>C++</span>
+                <span>Motor Drivers</span>
+                <span>Chassis Design</span>
+              </div>
+              <div class="project-links">
+                <button class="btn btn-sm btn-outline project-detail-btn" data-project="2">
+                  <span>View Details</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card" data-category="robotics">
+            <div class="project-visual">
+              <div class="project-banner hydraulics-bg">
+                <div class="project-badge">Mechanics</div>
+                <div class="blueprint-vector">
+                  <svg viewBox="0 0 100 100" fill="none" stroke="currentColor">
+                    <path d="M20 85 L80 85 M30 85 L45 50 L75 35 L85 45" stroke-width="2"/>
+                    <circle cx="30" cy="85" r="4" stroke-width="2"/>
+                    <circle cx="45" cy="50" r="4" stroke-width="2"/>
+                    <circle cx="75" cy="35" r="4" stroke-width="2"/>
+                    <path d="M75 35 L82 25 M85 45 L92 38" stroke-width="2"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">Fluid Mechanics &bull; Prototyping</div>
+              <h3 class="project-title">3-DOF Hydraulic Articulated Robotic Arm</h3>
+              <p class="project-description">
+                Fabricated a functional 3 Degrees of Freedom robotic arm utilizing Pascal’s Principle. Employs paired fluid syringes for smooth base rotation, boom elevation, and gripper clasping.
+              </p>
+              <div class="project-tags">
+                <span>Pascal's Law</span>
+                <span>3-DOF Linkage</span>
+                <span>Prototyping</span>
+                <span>Mechanics</span>
+              </div>
+              <div class="project-links">
+                <button class="btn btn-sm btn-outline project-detail-btn" data-project="3">
+                  <span>View Details</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card" data-category="software">
+            <div class="project-visual">
+              <div class="project-banner thermo-bg">
+                <div class="project-badge">Python</div>
+                <div class="blueprint-vector">
+                  <svg viewBox="0 0 100 100" fill="none" stroke="currentColor">
+                    <line x1="15" y1="85" x2="85" y2="85" stroke-width="2"/>
+                    <line x1="15" y1="85" x2="15" y2="15" stroke-width="2"/>
+                    <path d="M25 40 Q45 25 75 60 Q45 75 25 40" stroke-width="2" stroke-dasharray="3 2"/>
+                    <text x="75" y="95" font-size="8" fill="currentColor">V</text>
+                    <text x="5" y="25" font-size="8" fill="currentColor">P</text>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">Thermodynamics &bull; Computation</div>
+              <h3 class="project-title">Otto &amp; Diesel Thermodynamic Cycle Simulator</h3>
+              <p class="project-description">
+                Engineered a Python numerical simulation program to calculate thermal efficiency, compression ratio impacts, and plot Pressure-Volume (P-V) curves for internal combustion cycles.
+              </p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>Thermodynamics</span>
+                <span>Matplotlib</span>
+                <span>Numerical Analysis</span>
+              </div>
+              <div class="project-links">
+                <button class="btn btn-sm btn-outline project-detail-btn" data-project="4">
+                  <span>View Details</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card" data-category="cad">
+            <div class="project-visual">
+              <div class="project-banner aero-bg">
+                <div class="project-badge">Aero CAD</div>
+                <div class="blueprint-vector">
+                  <svg viewBox="0 0 100 100" fill="none" stroke="currentColor">
+                    <path d="M15 50 Q45 35 85 50 Q55 60 15 50 Z" stroke-width="2"/>
+                    <line x1="20" y1="50" x2="80" y2="50" stroke-width="1" stroke-dasharray="2 2"/>
+                    <circle cx="50" cy="50" r="1.5" fill="currentColor"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">Renewable Energy &bull; CAD</div>
+              <h3 class="project-title">Aerodynamic Micro Wind Turbine Blade Design</h3>
+              <p class="project-description">
+                Modeled an optimized twisted NACA airfoil blade profile for low wind speed residential micro-turbines. Evaluated tip-speed ratio (TSR) and chord length distributions.
+              </p>
+              <div class="project-tags">
+                <span>NACA Airfoil</span>
+                <span>AutoCAD</span>
+                <span>Aerodynamics</span>
+                <span>Clean Energy</span>
+              </div>
+              <div class="project-links">
+                <button class="btn btn-sm btn-outline project-detail-btn" data-project="5">
+                  <span>View Details</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6 -->
+          <article class="project-card" data-category="software">
+            <div class="project-visual">
+              <div class="project-banner web-bg">
+                <div class="project-badge">Web Dev</div>
+                <div class="blueprint-vector">
+                  <svg viewBox="0 0 100 100" fill="none" stroke="currentColor">
+                    <rect x="15" y="20" width="70" height="55" rx="4" stroke-width="2"/>
+                    <line x1="15" y1="35" x2="85" y2="35" stroke-width="2"/>
+                    <circle cx="25" cy="27" r="2.5" fill="currentColor"/>
+                    <circle cx="33" cy="27" r="2.5" fill="currentColor"/>
+                    <polyline points="35 50 45 60 55 50" stroke-width="2"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta">Frontend &bull; Portfolio</div>
+              <h3 class="project-title">Interactive Engineering Portfolio Website</h3>
+              <p class="project-description">
+                Engineered this modern, responsive, high-performance web portfolio featuring theme toggling, interactive animations, project categorization modals, and clean vanilla JS code.
+              </p>
+              <div class="project-tags">
+                <span>HTML5</span>
+                <span>Modern CSS</span>
+                <span>Vanilla JS</span>
+                <span>Responsive Design</span>
+              </div>
+              <div class="project-links">
+                <button class="btn btn-sm btn-outline project-detail-btn" data-project="6">
+                  <span>View Details</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Academics & Journey Section -->
+    <section class="section academics-section" id="academics">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Education &amp; Aspirations</span>
+          <h2 class="section-title">Academic <span class="text-gradient">Journey</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Item 1 -->
+          <div class="timeline-item current">
+            <div class="timeline-dot">
+              <div class="dot-inner"></div>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-time">2024 &ndash; 2028 (Present)</div>
+              <h3 class="timeline-title">B.Tech in Mechanical Engineering &bull; 1st Year</h3>
+              <h4 class="timeline-inst">Undergraduate Degree Program</h4>
+              <p class="timeline-text">
+                Currently immersing myself in first-year engineering essentials including Engineering Physics, Calculus &amp; Linear Algebra, Engineering Graphics &amp; CAD, Basic Electrical &amp; Electronics Engineering, and Central Workshop Practice.
+              </p>
+              <div class="coursework-chips">
+                <span class="chip">Engineering Mechanics</span>
+                <span class="chip">CAD &amp; Drafting</span>
+                <span class="chip">Calculus &amp; ODEs</span>
+                <span class="chip">Workshop Practice</span>
+                <span class="chip">Computer Programming</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-time">2022 &ndash; 2024</div>
+              <h3 class="timeline-title">Senior Secondary Education (Class XII - PCM)</h3>
+              <h4 class="timeline-inst">Physics, Chemistry &amp; Mathematics</h4>
+              <p class="timeline-text">
+                Built rigorous analytical foundations in Newtonian Mechanics, Wave Optics, Thermodynamics, Electrochemistry, Calculus, and Coordinate Geometry. Participated in national level entrance examinations.
+              </p>
+              <div class="coursework-chips">
+                <span class="chip">Physics (Mechanics &amp; Optics)</span>
+                <span class="chip">Advanced Mathematics</span>
+                <span class="chip">Science Exhibition</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-time">Completed 2022</div>
+              <h3 class="timeline-title">Secondary School Certificate (Class X)</h3>
+              <h4 class="timeline-inst">Core Science &amp; Mathematics Honors</h4>
+              <p class="timeline-text">
+                Demonstrated strong academic consistency, mathematical aptitude, and interest in regional robotics competitions and model making.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Future Goals & Vision -->
+        <div class="future-vision-box">
+          <div class="vision-header">
+            <div class="vision-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="22" y1="12" x2="18" y2="12"></line>
+                <line x1="6" y1="12" x2="2" y2="12"></line>
+                <line x1="12" y1="6" x2="12" y2="2"></line>
+                <line x1="12" y1="22" x2="12" y2="18"></line>
+              </svg>
+            </div>
+            <div>
+              <h3>Undergraduate Roadmap &amp; Goals (2024 - 2028)</h3>
+              <p>Key milestones I am striving towards during my B.Tech tenure:</p>
+            </div>
+          </div>
+          <div class="goals-grid">
+            <div class="goal-item">
+              <span class="goal-num">01</span>
+              <h4>Formula Student / SAE Team</h4>
+              <p>Aim to join a collegiate automotive design team to engineer suspension and powertrain components.</p>
+            </div>
+            <div class="goal-item">
+              <span class="goal-num">02</span>
+              <h4>Certified CAD Associate</h4>
+              <p>Achieve official CSWA (Certified SolidWorks Associate) certification in mechanical design and modeling.</p>
+            </div>
+            <div class="goal-item">
+              <span class="goal-num">03</span>
+              <h4>Robotics &amp; Mechatronics Lab</h4>
+              <p>Conduct research in autonomous mechanical navigation, ROS (Robot Operating System), and sensor fusion.</p>
+            </div>
+            <div class="goal-item">
+              <span class="goal-num">04</span>
+              <h4>Industrial Summer Internship</h4>
+              <p>Gain real-world manufacturing and thermal systems experience in an automobile or heavy machinery plant.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Reach Out</span>
+          <h2 class="section-title">Get In <span class="text-gradient">Touch</span></h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Details Cards -->
+          <div class="contact-info-col">
+            <h3 class="contact-col-title">Let's discuss engineering ideas!</h3>
+            <p class="contact-col-desc">
+              Whether you are an engineer, a senior mentor, a peer working on robotics, or a recruiter looking for an energetic freshman intern, feel free to drop me a message.
+            </p>
+
+            <div class="contact-cards">
+              <div class="c-card">
+                <div class="c-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="c-text">
+                  <span class="c-label">Email</span>
+                  <a href="mailto:lakshya.roat.mech@gmail.com" class="c-value">lakshya.roat.mech@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="c-card">
+                <div class="c-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="c-text">
+                  <span class="c-label">Location</span>
+                  <span class="c-value">India &bull; Available for Remote &amp; On-Site Internships</span>
+                </div>
+              </div>
+
+              <div class="c-card">
+                <div class="c-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </div>
+                <div class="c-text">
+                  <span class="c-label">LinkedIn</span>
+                  <a href="https://www.linkedin.com/in/lakshya-roat/" target="_blank" rel="noopener noreferrer" class="c-value">linkedin.com/in/lakshya-roat</a>
+                </div>
+              </div>
+
+              <div class="c-card">
+                <div class="c-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                  </svg>
+                </div>
+                <div class="c-text">
+                  <span class="c-label">GitHub</span>
+                  <a href="https://github.com/lakshya-roat" target="_blank" rel="noopener noreferrer" class="c-value">github.com/lakshya-roat</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-col">
+            <div class="form-wrapper">
+              <h3 class="form-title">Send Me a Message</h3>
+              <p class="form-desc">Fill out this quick form and I will get back to you promptly.</p>
+              
+              <form id="contact-form" class="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="name" class="form-label">Your Name <span class="required">*</span></label>
+                  <input type="text" id="name" name="name" class="form-input" placeholder="e.g. John Doe" required>
+                  <span class="error-msg" id="name-error">Please enter your name</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="email" class="form-label">Email Address <span class="required">*</span></label>
+                  <input type="email" id="email" name="email" class="form-input" placeholder="e.g. john@example.com" required>
+                  <span class="error-msg" id="email-error">Please enter a valid email address</span>
+                </div>
+
+                <div class="form-group">
+                  <label for="subject" class="form-label">Subject</label>
+                  <input type="text" id="subject" name="subject" class="form-input" placeholder="e.g. Project Discussion / Internship Opportunity">
+                </div>
+
+                <div class="form-group">
+                  <label for="message" class="form-label">Message <span class="required">*</span></label>
+                  <textarea id="message" name="message" rows="5" class="form-textarea" placeholder="Write your message here..." required></textarea>
+                  <span class="error-msg" id="message-error">Please write a message</span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                  <span>Send Message</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-arrow">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Details Modal -->
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true" role="dialog">
+    <div class="modal-dialog">
+      <button class="modal-close" id="modal-close-btn" aria-label="Close dialog">&times;</button>
+      <div class="modal-content" id="modal-content">
+        <!-- Content dynamically populated by script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Resume Preview Modal -->
+  <div class="modal-backdrop" id="resume-modal" aria-hidden="true" role="dialog">
+    <div class="modal-dialog resume-dialog">
+      <button class="modal-close" id="resume-close-btn" aria-label="Close resume dialog">&times;</button>
+      <div class="resume-sheet">
+        <div class="resume-header">
+          <div>
+            <h2>Lakshya Roat</h2>
+            <p class="resume-tagline">B.Tech in Mechanical Engineering (1st Year) &bull; Aspiring Design &amp; Robotics Engineer</p>
+          </div>
+          <button class="btn btn-sm btn-primary" onclick="window.print()">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:16px;height:16px;">
+              <polyline points="6 9 6 2 18 2 18 9"></polyline>
+              <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+              <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
+            <span>Print / Save PDF</span>
+          </button>
+        </div>
+        <hr class="resume-hr">
+        <div class="resume-body">
+          <section class="resume-sec">
+            <h3>Contact Information</h3>
+            <p><strong>Email:</strong> lakshya.roat.mech@gmail.com | <strong>Location:</strong> India | <strong>Role:</strong> 1st Year Engineering Student</p>
+          </section>
+          <section class="resume-sec">
+            <h3>Academic Background</h3>
+            <p><strong>Bachelor of Technology (B.Tech) - Mechanical Engineering</strong> (2024 - 2028)</p>
+            <p><strong>Higher Secondary (Class XII - PCM)</strong> (2022 - 2024)</p>
+          </section>
+          <section class="resume-sec">
+            <h3>Core Technical Competencies</h3>
+            <p><strong>CAD &amp; Modeling:</strong> AutoCAD 2D Drafting, SolidWorks 3D Modeling, Engineering Drawing, Orthographic Projections.</p>
+            <p><strong>Core Mechanical:</strong> Engineering Mechanics, Statics, Thermodynamics, Material Science basics, Workshop Practice.</p>
+            <p><strong>Software &amp; Hardware:</strong> Python, C/C++, Arduino microcontroller interfacing, HTML5/CSS3/JavaScript.</p>
+          </section>
+          <section class="resume-sec">
+            <h3>Key Projects</h3>
+            <ul>
+              <li><strong>Compound Gear Train Assembly:</strong> 3-stage speed reduction mechanism modeled in SolidWorks with velocity ratio analysis.</li>
+              <li><strong>Autonomous Obstacle Avoiding Rover:</strong> Arduino-controlled mobile robot with ultrasonic sweep sensing.</li>
+              <li><strong>3-DOF Articulated Hydraulic Arm:</strong> Syringe fluid mechanics demonstrator applying Pascal's Principle.</li>
+              <li><strong>Thermodynamic Cycle Simulator:</strong> Python tool for calculating thermal efficiency and P-V curve outputs.</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification for Form Submission -->
+  <div class="toast" id="toast" role="alert" aria-live="polite">
+    <div class="toast-icon">✓</div>
+    <div class="toast-body">
+      <h5 class="toast-title">Message Sent!</h5>
+      <p class="toast-desc">Thank you for reaching out, Lakshya will reply shortly.</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <svg class="gear-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="3"></circle>
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+            </svg>
+            <span>Lakshya Roat</span>
+          </div>
+          <p class="footer-tagline">B.Tech Mechanical Engineering Student &bull; Crafting the Future of Mechanics &amp; Technology</p>
+        </div>
+
+        <div class="footer-nav">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#academics">Academics</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-socials">
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/lakshya-roat/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+            <a href="https://github.com/lakshya-roat" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+            <a href="mailto:lakshya.roat.mech@gmail.com" aria-label="Email" class="social-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Lakshya Roat. All rights reserved. B.Tech Mechanical Engineering.</p>
+        <button class="back-to-top" id="back-to-top-btn" aria-label="Back to Top">
+          <span>Back to Top</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
